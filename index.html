@@ -52,7 +52,18 @@
 
 
 -->
-
+<body>
+		<span id="time"></span>
+</body>
+<script>
+    function mytime(){
+        var a = new Date();
+        var b = a.toLocaleTimeString();
+        var c = a.toLocaleDateString();
+        document.getElementById("time").innerHTML = c+"&nbsp"+b;
+        }
+    setInterval(function() {mytime()},1000);
+</script>
 
 
 更新5.31
